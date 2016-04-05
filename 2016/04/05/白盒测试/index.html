@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="软件测试," />
 
 
 
@@ -57,15 +57,115 @@
 
 
 
-<meta name="description" content="不积跬步无以至千里">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ἀρης的个人主页">
-<meta property="og:url" content="http://zhangshimin.top/index.html">
+<meta name="description" content="1.L-测试中的图
+整个软件测试就是一个图
+
+
+有穷点的集合
+起始节点
+终结节点
+亚节点（多个起始节点，终结节点）
+
+
+边
+Test Path
+开始是初始节点，结束时终结节点–一条测试路径
+以边来定义路径长度
+点路径为零的
+子路径
+
+
+
+
+
+2. 图覆盖准则
+Cover: 子路径被测试路径覆盖
+
+
+结构覆盖
+关注顶点和边
+顶点覆盖
+边覆盖
+边对覆盖
+极限完全路径覆盖
+
+
+定义n VC（n=0）EC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="白盒测试">
+<meta property="og:url" content="http://zhangshimin.top/2016/04/05/白盒测试/index.html">
 <meta property="og:site_name" content="Ἀρης的个人主页">
-<meta property="og:description" content="不积跬步无以至千里">
+<meta property="og:description" content="1.L-测试中的图
+整个软件测试就是一个图
+
+
+有穷点的集合
+起始节点
+终结节点
+亚节点（多个起始节点，终结节点）
+
+
+边
+Test Path
+开始是初始节点，结束时终结节点–一条测试路径
+以边来定义路径长度
+点路径为零的
+子路径
+
+
+
+
+
+2. 图覆盖准则
+Cover: 子路径被测试路径覆盖
+
+
+结构覆盖
+关注顶点和边
+顶点覆盖
+边覆盖
+边对覆盖
+极限完全路径覆盖
+
+
+定义n VC（n=0）EC">
+<meta property="og:updated_time" content="2016-04-05T05:28:33.116Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ἀρης的个人主页">
-<meta name="twitter:description" content="不积跬步无以至千里">
+<meta name="twitter:title" content="白盒测试">
+<meta name="twitter:description" content="1.L-测试中的图
+整个软件测试就是一个图
+
+
+有穷点的集合
+起始节点
+终结节点
+亚节点（多个起始节点，终结节点）
+
+
+边
+Test Path
+开始是初始节点，结束时终结节点–一条测试路径
+以边来定义路径长度
+点路径为零的
+子路径
+
+
+
+
+
+2. 图覆盖准则
+Cover: 子路径被测试路径覆盖
+
+
+结构覆盖
+关注顶点和边
+顶点覆盖
+边覆盖
+边对覆盖
+极限完全路径覆盖
+
+
+定义n VC（n=0）EC">
 
 
 
@@ -83,7 +183,7 @@
   };
 </script>
 
-  <title> Ἀρης的个人主页 </title>
+  <title> 白盒测试 | Ἀρης的个人主页 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -114,9 +214,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -223,9 +321,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -245,10 +343,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/04/05/白盒测试/" itemprop="url">
-                  白盒测试
-                </a>
+                白盒测试
               
             
           </h1>
@@ -322,9 +417,7 @@
       
 
       
-        
-          
-            <h2 id="1-L-测试中的图"><a href="#1-L-测试中的图" class="headerlink" title="1.L-测试中的图"></a>1.L-测试中的图</h2><blockquote>
+        <h2 id="1-L-测试中的图"><a href="#1-L-测试中的图" class="headerlink" title="1.L-测试中的图"></a>1.L-测试中的图</h2><blockquote>
 <p>整个软件测试就是一个图</p>
 </blockquote>
 <ul>
@@ -380,360 +473,67 @@
 <li>定义流覆盖准则<br>  -du(ni,nj,v)<br>1.All-defs coverage(ADC)<br>2.All-uses coverage(AUC)<br>3.All-du-paths coverage(ADUPC)</li>
 </ul>
 <h2 id="6-JUnit"><a href="#6-JUnit" class="headerlink" title="6. JUnit"></a>6. JUnit</h2>
-          
-        
       
     </div>
 
     <div>
       
+        
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
+    <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 70px; height: 70px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wei.png" alt="Ἀρης WeChat Pay" style="width: 200px; max-width: 100%; display: inline-block"/>
+        <p>微信打赏</p>
+      </div>
+    
+    
+  </div>
+</div>
+
+      
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/05/Hexo+GitHub个人博客/" itemprop="url">
-                  Hexo+GitHub个人博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-05T13:14:25+08:00" content="2016-04-05">
-              2016-04-05
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/软件测试/" rel="tag">#软件测试</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/05/Hexo+GitHub个人博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/05/Hexo+GitHub个人博客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/04/05/Hexo+GitHub个人博客/" class="leancloud_visitors" data-flag-title="Hexo+GitHub个人博客">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="git-footnote"><a href="#git-footnote" class="headerlink" title="git^footnote"></a>git<a href="git配置：http://www.cnblogs.com/zhcncn/p/3787849.html。">^footnote</a></h3><p><a href="http://pan.baidu.com/s/1i5nQ8NN/" target="_blank" rel="external">点击下载</a> 密码：8tuc</p>
-<h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><p>32位 <a href="http://pan.baidu.com/s/1skTr5oD/" target="_blank" rel="external">点击下载</a> 密码：hpa4</p>
-<ol>
-<li>修改npm为淘宝镜像<a href="淘宝npm镜像:http://npm.taobao.org。">^footnote2</a></li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>else：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
-<h3 id="GitHub建代码库"><a href="#GitHub建代码库" class="headerlink" title="GitHub建代码库"></a>GitHub建代码库</h3><pre><code>1. 建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】
-2. 设置SSHKEY
-</code></pre><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo</span><br></pre></td></tr></table></figure>
-<p>常用命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure></p>
-<h4 id="Setup-your-blog"><a href="#Setup-your-blog" class="headerlink" title="Setup your blog"></a>Setup your blog</h4><p>在电脑中建立一个名字叫「Hexo」的文件夹（比如我建在了D:\Hexo），然后在此文件夹中右键打开Git Bash。执行下面的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">[info] Copying data</span><br><span class="line">[info] You are almost done! Don&apos;t forget to run `npm install` before you start b</span><br><span class="line">logging with Hexo!Hexo随后会自动在目标文件夹建立网站所需要的文件。然后按照提示，运行 npm install（在 /D/Hexo下）</span><br><span class="line">$ cnpm install</span><br></pre></td></tr></table></figure></p>
-<p>npm install会在D:\Hexo目录中安装 node_modules。</p>
-<h4 id="Start-the-server"><a href="#Start-the-server" class="headerlink" title="Start the server"></a>Start the server</h4><p>运行下面的命令（在 /D/Hexo下）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">[info] Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.表明Hexo Server已经启动了，在浏览器中打开 http://localhost:4000/，这时可以看到Hexo已为你生成了一篇blog。</span><br></pre></td></tr></table></figure></p>
-<p>你可以按Ctrl+C 停止Server。</p>
-<h4 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h4><p>新打开一个git bash命令行窗口，cd到/D/Hexo下，执行下面的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;My New Post&quot;</span><br><span class="line">[info] File created at d:\Hexo\source\_posts\My-New-Post.md刷新http://localhost:4000/，可以发现已生成了一篇新文章 &quot;My New Post&quot;。</span><br></pre></td></tr></table></figure></p>
-<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><ol>
-<li><p>修改 config</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: github</span><br><span class="line">  repository: git@github.com:zhchnchn/zhchnchn.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>2.修改主题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-<p>3.安装git组件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>更详细步骤参考：<a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="external">http://www.cnblogs.com/zhcncn/p/4097881.html</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/04/05/Hexo+GitHub个人博客/" rel="next" title="Hexo+GitHub个人博客">
+                <i class="fa fa-chevron-left"></i> Hexo+GitHub个人博客
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/04/05/软件测试基础/" itemprop="url">
-                  软件测试基础
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-05T12:04:39+08:00" content="2016-04-05">
-              2016-04-05
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/测试/" itemprop="url" rel="index">
-                    <span itemprop="name">测试</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/05/软件测试基础/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/05/软件测试基础/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/04/05/软件测试基础/" class="leancloud_visitors" data-flag-title="软件测试基础">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="bug的故事"><a href="#bug的故事" class="headerlink" title="bug的故事"></a>bug的故事</h2><blockquote>
-<p>bug.. First Computer Bug</p>
-</blockquote>
-<ul>
-<li>Grace Hoper（English）<pre><code>- 千年虫
-- 第一个bug
-</code></pre></li>
-</ul>
-<h2 id="L-PIE模型"><a href="#L-PIE模型" class="headerlink" title="L-PIE模型"></a>L-PIE模型</h2><blockquote>
-<p>π模型<br>来自于 - IEEE Std. 1044,INTRODUCTION TO SOFTWARE TESTING</p>
-</blockquote>
-<h3 id="关于bug的3个概念"><a href="#关于bug的3个概念" class="headerlink" title="关于bug的3个概念"></a>关于bug的3个概念</h3><blockquote>
-<p>软件运行过程中的不同时期有不同的含义</p>
-</blockquote>
-<ul>
-<li>Fault  静态过程中产生的，coding</li>
-<li>Error  在运行过程中，触发了一个Fault而产生的一个中间状态</li>
-<li>Failure  测试人员或用户观测到的行为</li>
-</ul>
-<h3 id="PIE-Model"><a href="#PIE-Model" class="headerlink" title="PIE Model"></a>PIE Model</h3><ul>
-<li>Execution  执行通过错误的代码</li>
-<li>Infection  感染-执行错误代码过程中，触发错误的中间状态</li>
-<li>Propagation  传播，错误的中间状态必须传播到最后输出，观测到与预期不一致</li>
-</ul>
-<h3 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h3><ul>
-<li>Infection：The state of the program must be incorrect</li>
-<li>Propagation：The infected statc must propagated to cause some output of the program to be incorrect</li>
-</ul>
-<h3 id="测试术语"><a href="#测试术语" class="headerlink" title="测试术语"></a>测试术语</h3><ul>
-<li>Test Case<pre><code>1.Test Input Test Date
-2.Test Oracle Expected Output
-3.Test Environment
-</code></pre></li>
-<li>Testing &amp; Debugging</li>
-<li>Validation 确认&amp;Verification<br>  1.Validation 确认规格文档<br>  2.Verification 实现是否满足用户需要的规格文档</li>
-<li>Static Testing &amp; Dynamic Testing</li>
-<li>Black-Box Testing &amp; While-Box Testing<br>  Gray-Box Testing： 通过反编译等手段，获取部分代码</li>
-<li>Testing Level<ul>
-<li>Unit Testing</li>
-<li>Module Testing</li>
-<li>Integration Testing：模块级的组合-集合测试</li>
-<li>System Testing：build起来以后整个系统</li>
-</ul>
-</li>
-<li>V Model</li>
-<li>Testing Process<ul>
-<li>根据规格获取输入，预期</li>
-<li>打包生成测试用例</li>
-<li>变成自动化脚本</li>
-<li>产生测试结果</li>
-</ul>
-</li>
-</ul>
-<h2 id="fault的反思"><a href="#fault的反思" class="headerlink" title="fault的反思"></a>fault的反思</h2><blockquote>
-<p>fault的反思</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -741,6 +541,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/05/白盒测试/"
+           data-title="白盒测试" data-url="http://zhangshimin.top/2016/04/05/白盒测试/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -760,8 +568,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -870,6 +687,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-L-测试中的图"><span class="nav-number">1.</span> <span class="nav-text">1.L-测试中的图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-图覆盖准则"><span class="nav-number">2.</span> <span class="nav-text">2. 图覆盖准则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-测试准则"><span class="nav-number">3.</span> <span class="nav-text">3. 测试准则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-控制流图"><span class="nav-number">4.</span> <span class="nav-text">4. 控制流图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-数据流图-Data-Flow"><span class="nav-number">5.</span> <span class="nav-text">5. 数据流图 Data Flow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-JUnit"><span class="nav-number">6.</span> <span class="nav-text">6. JUnit</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -953,6 +781,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
+
+
 
   
 
