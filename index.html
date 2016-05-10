@@ -246,6 +246,287 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/10/sql学习/" itemprop="url">
+                  sql学习
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T13:40:00+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/10/sql学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/sql学习/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/10/sql学习/" class="leancloud_visitors" data-flag-title="sql学习">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><h3 id="数据库的概念"><a href="#数据库的概念" class="headerlink" title="数据库的概念"></a>数据库的概念</h3><p> 一种存取数据的程序</p>
+<ul>
+<li>一种 有很多存取数据的程序</li>
+<li><p>存取 </p>
+<ul>
+<li>存：能够保持数据避免丢失</li>
+<li>取：按照要求取得数据<h3 id="DBMS"><a href="#DBMS" class="headerlink" title="DBMS"></a>DBMS</h3><blockquote>
+<p>DATABASE MANAGER SYSTEM</p>
+</blockquote>
+</li>
+</ul>
+<p>应用程序-&gt;DBMS-&gt;数据文件</p>
+</li>
+</ul>
+<h3 id="为什么要使用数据库呢？"><a href="#为什么要使用数据库呢？" class="headerlink" title="为什么要使用数据库呢？"></a>为什么要使用数据库呢？</h3><ul>
+<li>较大数据量   数以亿计</li>
+<li>网络访问     来自世界各地</li>
+<li>并发访问</li>
+<li>高性能</li>
+<li>事物控制</li>
+<li>持久化和数据安全</li>
+<li>数据不丢失</li>
+<li>查询数据需求逻辑复杂</li>
+</ul>
+<h3 id="数据库的类型"><a href="#数据库的类型" class="headerlink" title="数据库的类型"></a>数据库的类型</h3><ul>
+<li>关系型数据库<ul>
+<li>支持sql语句</li>
+<li>通过外键进行关联</li>
+<li>设计的三范式<ul>
+<li>字段不可在分</li>
+<li>有主键，且非主键字段依赖主键</li>
+<li>非主键字段不能相互依赖</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非关系型数据库<ul>
+<li>不支持sql语句</li>
+<li>分类:<ul>
+<li>Hadoop        大数据数据库</li>
+<li>mongoDB      文档型数据库</li>
+<li>redis        键值数据库</li>
+<li>Cassandra    架构非常先进的分布式数据库</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>NEWSQL 新型的关系型数据库<ul>
+<li>NewSQL是指这样一类新式的关系型数据库管理系统，针对OLTP（读-写）工作负载，追求提供和NoSQL系统相同扩展性能，且仍然保持ACID和SQL等特性（scalable and ACID and (relational and/or sql -access)）</li>
+</ul>
+</li>
+</ul>
+<h2 id="SQL学习"><a href="#SQL学习" class="headerlink" title="SQL学习"></a>SQL学习</h2><h3 id="数据库的基本操作"><a href="#数据库的基本操作" class="headerlink" title="数据库的基本操作"></a>数据库的基本操作</h3><ol>
+<li><p>显示所有数据库</p>
+<figure class="highlight plain"><figcaption><span>databases;```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2. 创建数据库参数</span><br><span class="line">   ```show create database 数据库名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用数据库</p>
+<figure class="highlight plain"><figcaption><span>数据库名```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4. 删除数据库</span><br><span class="line">   ```drop database 数据库名</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="数据库表的基本操作"><a href="#数据库表的基本操作" class="headerlink" title="数据库表的基本操作"></a>数据库表的基本操作</h3><blockquote>
+<p>表是数据库存储数据的基本单位。个一个表包含若干字段或记录；</p>
+</blockquote>
+<ol>
+<li><p>创建表</p>
+<ul>
+<li>语法<br> CREATE TABLE表名(属性名 数据类型 [完整性约束条件],<br> 属性名 数据类型   [完整性约束条件],<br> 属性名 数据类型   [完整性约束条件]);</li>
+<li><p>完整性约束条件</p>
+<p>  | 约束条件      | 说明          |<br>  | ————- |:————-:|<br>  | FOREIGN KEY      | 标识该属性为该表的主键，可以唯一的标识对应的记录 |<br>  | FOREIGN KEY      | 标识该属性为该表的外键，与某表的主键关联     |<br>  | NOT NULL | 标识该属性不能为空      |<br>  | UNIQUE | 标识该属性的值是唯一的 |<br>  | AUTO_INCREMENT | 标识该属性自动增长 |<br>  | DEFAULT | 为该属性设置默认值 |</p>
+</li>
+<li><p>实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">创建图书类别表：t_bookType</span><br><span class="line">   CREATE TABLE t_booktype(</span><br><span class="line">   id INT PRIMARY KEYAUTO_INCREMENT,</span><br><span class="line">   bookTypeName VARCHAR(20),</span><br><span class="line">   bookTypeDesc VARCHAR(200)</span><br><span class="line">   );</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">创建图书表：t_book</span><br><span class="line">   CREATE TABLE t_book(</span><br><span class="line">   id INT PRIMARY KEYAUTO_INCREMENT,</span><br><span class="line">   bookName VARCHAR(20),</span><br><span class="line">   author VARCHAR(10),</span><br><span class="line">   price DECIMAL(6,2),</span><br><span class="line">   bookTypeId INT,</span><br><span class="line">   CONSTRAINT `fk` FOREIGN KEY (`bookTypeId`) REFERENCES `t_bookType` (`id`)</span><br><span class="line">   );</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>查看表</p>
+<ol>
+<li><p>查看所有的表</p>
+ <figure class="highlight plain"><figcaption><span>tables; ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2. 查看基本表结构</span><br><span class="line">    ``` desc table 表名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看详细表结构</p>
+ <figure class="highlight plain"><figcaption><span>create table 表名 ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">3. 修改表</span><br><span class="line">    1. 修改表名</span><br><span class="line">        ``` alter table 旧表名 rename 新表名;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改字段</p>
+ <figure class="highlight plain"><figcaption><span>table 表名 change 旧字段名 新字段名 数据类型 [完整性约束]; ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3. 增加字段</span><br><span class="line">    ``` alter table 表名 add 新字段名 数据类型 [完整性约束] after 原表的属性名;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><figcaption><span>table 表名 add 新字段名 数据类型 [完整性约束] first; ``` </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4. 删除字段</span><br><span class="line">    ``` alter table 表名 drop 字段名;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>删除表</p>
+<ol>
+<li><p>删除表</p>
+ <figure class="highlight plain"><figcaption><span>table 表名; ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 查询数据</span><br><span class="line"> 1. 单表查询</span><br><span class="line">     1. 查询所有字段</span><br><span class="line">     2. 查询指定字段</span><br><span class="line">     3. where条件查询</span><br><span class="line">     4. 带in的关键字查询</span><br><span class="line">     5. between and 的范围查询</span><br><span class="line">     6. 带like的模糊查询</span><br><span class="line">     7. 空值查询</span><br><span class="line">     8. 带and的多条件查询</span><br><span class="line">     9. 带or的多条件查询</span><br><span class="line">     10. distinct去重复查询</span><br><span class="line">     11. 对查询结果进行排序</span><br><span class="line">     12. group by 分组查询</span><br><span class="line">     13. limit 分页查询</span><br><span class="line"></span><br><span class="line">### 使用聚合函数查询</span><br><span class="line"> 1. count()函数</span><br><span class="line"> 2. sun()函数</span><br><span class="line"> 3. avg()函数</span><br><span class="line"> 4. max()函数</span><br><span class="line"> 5. min()函数</span><br><span class="line"></span><br><span class="line">### 连接查询-多表查询</span><br><span class="line"> &gt; 连接查询是将两个或两个以上的表按照某个条件连接起来，从中选取需要的数据</span><br><span class="line"></span><br><span class="line"> 1. 内连接查询</span><br><span class="line">     + 内连接查询是一种最常用的连接查询。内连接查询可以查询两个或者两个以上的表； </span><br><span class="line"> 2. 外连接查询</span><br><span class="line">     + 外连接可以查出某一张表的所有信息；</span><br><span class="line">     ``` select 属性名列表 FROM表名1 LEFT|RIGHT JOIN 表名2 ON 表名1.属性名1=表名2.属性名2；</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>左连接查询</p>
+<ul>
+<li>可以查询出“表名 1”的所有记录，而“表名 2”中，只能查询出匹配的记录；</li>
+</ul>
+</li>
+<li>右连接查询<ul>
+<li>可以查询出“表名 2”的所有记录，而“表名 1”中，只能查询出匹配的记录；</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>多条件连接查询</li>
+</ol>
+<h3 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h3><ol>
+<li>带in关键字的子查询<ul>
+<li>一个查询语句的条件可能落在另一个 SELECT语句的查询结果中。</li>
+</ul>
+</li>
+<li>带比较运算符的子查询<ul>
+<li>子查询可以使用比较运算符。</li>
+</ul>
+</li>
+<li>带exitsts关键字的子查询<ul>
+<li>假如子查询查询到记录，则进行外层查询，否则，不执行外层查询；</li>
+</ul>
+</li>
+<li>带any关键字的子查询<ul>
+<li>ANY关键字表示满足其中任一条件；</li>
+</ul>
+</li>
+<li>带all关键字的子查询<ul>
+<li>ALL关键字表示满足所有条件；</li>
+</ul>
+</li>
+</ol>
+<h3 id="合并查询结果"><a href="#合并查询结果" class="headerlink" title="合并查询结果"></a>合并查询结果</h3><ol>
+<li>union<ul>
+<li>使用 union关键字是，数据库系统会将所有的查询结果合并到一起，然后去除掉相同的记录；</li>
+</ul>
+</li>
+<li>union all<ul>
+<li>使用 UNION ALL，不会去除掉系统的记录；<h3 id="为表和字段取别名"><a href="#为表和字段取别名" class="headerlink" title="为表和字段取别名"></a>为表和字段取别名</h3></li>
+</ul>
+</li>
+<li>为表取别名<ul>
+<li>格式: <figure class="highlight plain"><figcaption><span>表的别名 ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2. 为字段取别名</span><br><span class="line">    + 格式: ``` 属性名 [as] 别名</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+<h3 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h3><ol>
+<li><p>给表的所有字段插入数据</p>
+<ul>
+<li>格式：<figure class="highlight plain"><figcaption><span>INTO 表名 VALUES(值 1，值 2，值 3，...，值 n)；```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2. 给表的指定字段插入数据</span><br><span class="line">    + 格式：``` INSERT INTO 表名(属性   1，属性 2，...，属性 n) VALUES(值 1，值 2，值 3，...，值 n)；</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>同时插入多条记录</p>
+<ul>
+<li><figure class="highlight plain"><figcaption><span>INTO表名    [(属性列表)] VALUES(取值列表 1)，(取值列表  2)...，(取值列表n)； ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 更新数据</span><br><span class="line"> ``` UPDATE表名 SET 属性名1=取值1属性名2=取值2，...，属性名n=取值n WHERE条件表达式；</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h3><p> <code>DELETE FROM表名   [WHERE条件表达式]</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/05/基于webkit内核写的Python脚本/" itemprop="url">
                   基于webkit内核写的Python脚本
                 </a>
@@ -630,10 +911,10 @@
       
         
           
-            <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="git-footnote"><a href="#git-footnote" class="headerlink" title="git^footnote"></a>git<a href="git配置：http://www.cnblogs.com/zhcncn/p/3787849.html。">^footnote</a></h3><p><a href="http://pan.baidu.com/s/1i5nQ8NN/" target="_blank" rel="external">点击下载</a> 密码：8tuc</p>
+            <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="git-footnote"><a href="#git-footnote" class="headerlink" title="git ^footnote"></a>git <a href="git配置：http://www.cnblogs.com/zhcncn/p/3787849.html。">^footnote</a></h3><p><a href="http://pan.baidu.com/s/1i5nQ8NN/" target="_blank" rel="external">点击下载</a> 密码：8tuc</p>
 <h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><p>32位 <a href="http://pan.baidu.com/s/1skTr5oD/" target="_blank" rel="external">点击下载</a> 密码：hpa4</p>
 <ol>
-<li>修改npm为淘宝镜像<a href="淘宝npm镜像:http://npm.taobao.org。">^footnote2</a></li>
+<li>修改npm为淘宝镜像 <a href="淘宝npm镜像:http://npm.taobao.org。">^footnote2</a></li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <p>else：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
@@ -900,7 +1181,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -908,7 +1189,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -917,7 +1198,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
